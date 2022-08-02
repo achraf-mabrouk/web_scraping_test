@@ -66,8 +66,8 @@ for com in com_div:
     
 
 def save_data(data):
-    with open("Hotel_burj_arab.json", "w") as f:
-        f = json.dump(data, f)
+    with open("Hotel_burj_arab.json", "w", encoding= 'utf-8') as f:
+        json.dump(data, f, indent=4, ensure_ascii=False)
     print("Data saved Successfully!")
 
 
